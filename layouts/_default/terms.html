@@ -1,0 +1,15 @@
+{{ partial "head.html" . }}
+<div class="content container">
+  <div class="posts">
+    <h1 class="post-title">{{ .Title }}</h1>
+  <ul>
+  {{ $data := .Data }}
+  {{ range $key, $value := .Data.Terms.ByCount }}
+    <li>
+      <a href="{{ $value.Name | urlize }}">{{ $value.Name }}</a>
+      <span>&#40;{{ $value.Count }}&#41;</span>
+    </li>
+  {{ end }}
+  </ul>
+</div>
+{{ partial "foot.html" . }}
