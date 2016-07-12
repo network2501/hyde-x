@@ -5,7 +5,7 @@
 .sidebar-about h1 {
   color: #303030;
   margin-top: 0;
-  font-family: "PT Sans", serif;
+  font-family: "Open Sans", serif;
   font-size: 1rem;
 }
 
@@ -27,7 +27,7 @@
   line-height: 1em;
 }
 .widget {
-  line-height: 1.6em;
+  line-height: 1.55em;
   word-wrap: break-word;
   font-size: 0.9em;
 }
