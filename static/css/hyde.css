@@ -33,6 +33,13 @@
 
 html {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-style: normal;
+  src: url('/fonts/Open-Sans-regular/Open-Sans-regular.eot');
+  src: url('/fonts/Open-Sans-regular/Open-Sans-regular.eot?#iefix') format('embedded-opentype'),
+       local('Open Sans'),
+       local('Open-Sans-regular'),
+       url('/fonts/Open-Sans-regular/Open-Sans-regular.woff2') format('woff2'),
+       url('/fonts/Open-Sans-regular/Open-Sans-regular.woff') format('woff'),
 }
 @media (min-width: 48em) {
   html {
@@ -85,7 +92,8 @@ html {
 
 /* Sidebar nav */
 .sidebar-nav {
-  margin-bottom: 1rem;
+  padding-left: 0;
+  margin-bottom: 2rem;
 }
 .sidebar-nav-item {
   display: block;
@@ -177,25 +185,7 @@ a.sidebar-nav-item:focus {
 
 /* Base16 (http://chriskempson.github.io/base16/#default) */
 
-/* Red */
-.theme-base-08 .sidebar {
-  background-color: #1d2021;
-}
-.theme-base-08 .content a,
-.theme-base-08 .related-posts li a:hover {
-  color: #d79921;
-}
-
-/* Orange */
-.theme-base-09 .sidebar {
-  background-color: #d28445;
-}
-.theme-base-09 .content a,
-.theme-base-09 .related-posts li a:hover {
-  color: #d28445;
-}
-
-/* Yellow */
+/* 2501 theme */
 .theme-base-0a .sidebar {
   background-color: #ffffff;
 }
@@ -212,39 +202,9 @@ a.sidebar-nav-item:focus {
 .theme-base-0b .related-posts li a:hover {
   color: #90a959;
 }
-
-/* Cyan */
-.theme-base-0c .sidebar {
-  background-color: #75b5aa;
-}
-.theme-base-0c .content a,
-.theme-base-0c .related-posts li a:hover {
-  color: #75b5aa;
+.footer-message {
+   position: absolute;
+   padding-left: 1rem;
+   padding-right: 1rem:
 }
 
-/* Blue */
-.theme-base-0d .sidebar {
-  background-color: #6a9fb5;
-}
-.theme-base-0d .content a,
-.theme-base-0d .related-posts li a:hover {
-  color: #6a9fb5;
-}
-
-/* Magenta */
-.theme-base-0e .sidebar {
-  background-color: #aa759f;
-}
-.theme-base-0e .content a,
-.theme-base-0e .related-posts li a:hover {
-  color: #aa759f;
-}
-
-/* Brown */
-.theme-base-0f .sidebar {
-  background-color: #8f5536;
-}
-.theme-base-0f .content a,
-.theme-base-0f .related-posts li a:hover {
-  color: #8f5536;
-}

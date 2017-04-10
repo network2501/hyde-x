@@ -48,13 +48,13 @@ body {
 }
 
 html {
-  font-family: "Open Sans", sans-serif;
-  font-size: 19px;
-  line-height: 1.55;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
 }
 @media (min-width: 38em) {
   html {
-    font-size: 19px;
+    font-size: 20px;
   }
 }
 
@@ -150,18 +150,20 @@ abbr[title] {
 /* Code */
 code,
 pre {
-  font-family: Inconsolata, Monaco, "Courier New", monospace;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  color: #ebdbb2;
 }
 code {
   padding: .25em .5em;
   font-size: 85%;
   color: #bf616a;
-  background-color: #f9f9f9;
+  background-color: #1d2021;
   border-radius: 3px;
 }
 pre {
   display: block;
   margin-top: 0;
+  border-radius: 6px;
   margin-bottom: 1rem;
   padding: 1rem;
   font-size: .8rem;
@@ -170,7 +172,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f9f9f9;
+  background-color: #1d2021;
 }
 pre code {
   padding: 0;
@@ -190,7 +192,7 @@ pre code {
 
 /* Gist via GitHub Pages */
 .gist .gist-file {
-  font-family: Inconsolata, Monaco, "Courier New", monospace !important;
+  font-family: Menlo, Monaco, "Courier New", monospace !important;
 }
 .gist .markdown-body {
   padding: 15px;
@@ -259,7 +261,7 @@ tbody tr:nth-child(odd) th {
  */
 
 .lead {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 300;
 }
 
@@ -389,7 +391,7 @@ tbody tr:nth-child(odd) th {
   overflow: hidden; /* clearfix */
   margin-left: -1rem;
   margin-right: -1rem;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
   color: #ccc;
   text-align: center;
 }
