@@ -4,20 +4,9 @@
     {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
     {{ range $paginator.Pages }}
     <div class="post">
-      <h1 class="post-title">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </h1>
-      <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}{{ if not .Site.Params.hideReadingTime }} &middot; {{ .ReadingTime }} minute read{{ end }}
-      {{ if isset .Params "categories" }}
-      {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
-      {{ end }}</span>
+      <span class="post-date">{{ .Date.Format "Jan 2006" }} <span class="post-title"><a href="{{ .Permalink }}">{{ .Title }}</a></span></span>
       {{ if eq .Site.Params.truncate false }}
       {{ .Content }}
-      {{ else if .Description }}
-      <p>{{ .Description }}      <a href="{{ .Permalink }}">Read On &rarr;</a>
-      {{ else }}
-      {{ .Summary }}
-      {{ if .Truncated }}<a href="{{ .Permalink }}">Read On &rarr;</a>{{ end }}
       {{ end }}
     </div>
     {{ end }}

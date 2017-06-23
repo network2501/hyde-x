@@ -1,13 +1,10 @@
 {{ partial "head.html" . }}
 <div class="content container">
   <div class="post">
-    <h1 class="post-title">{{ .Title }}</h1>
-    <span class="post-date">{{ .Date.Format "Jan 2, 2006" }}{{ if not .Site.Params.hideReadingTime }} &middot; {{ .ReadingTime }} minute read{{ end }}
-    {{ if isset .Params "categories" }}
-    {{ range .Params.categories }}<a class="label" href="{{ "/categories/" | absURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}
-    {{ end }}</span>
+    <h3 class="post-title">{{ .Title }}</h3>
     {{ .Content }}
+    <hr>
 </div>
-{{ partial "post/related-content" . }}
+{{ partial "related-content.html" . }}
 </div>
 {{ partial "foot.html" . }}
